@@ -10,8 +10,7 @@ class RecurringEventTest extends PHPUnit_Framework_TestCase {
     /*
      * Test daily event without limit
      */
-    public function testUnlimitedDailyEvent()
-    {
+    public function testUnlimitedDailyEvent() {
         $recEvent = new RecurringEvent(new DateTime("2014-01-01"), new DailyRecurringType());
         $events = $recEvent->generateEventDates(new DateTime("2015-01-01"), new DateTime("2015-01-31"));
 

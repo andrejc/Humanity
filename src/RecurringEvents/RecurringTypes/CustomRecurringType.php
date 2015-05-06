@@ -18,16 +18,14 @@ class CustomRecurringType implements RecurringTypeInterface {
     /**
      * @return int
      */
-    public function getPeriod()
-    {
+    public function getPeriod() {
         return $this->period;
     }
 
     /**
      * @return int[]
      */
-    public function getDaysOfWeek()
-    {
+    public function getDaysOfWeek() {
         return $this->daysOfWeek;
     }
 }
